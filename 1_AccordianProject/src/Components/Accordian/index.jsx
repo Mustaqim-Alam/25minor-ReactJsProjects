@@ -36,8 +36,7 @@ function Accordian() {
       <div>
         {Data &&
           Data.map((dataItem) => (
-            // eslint-disable-next-line react/jsx-key
-            <div>
+            <div key={dataItem.id}>
               <div
                 onClick={
                   enableMultiselect

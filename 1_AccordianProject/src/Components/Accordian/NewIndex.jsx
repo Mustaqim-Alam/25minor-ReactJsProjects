@@ -31,8 +31,10 @@ function NewIndex() {
           Click MultiSelect
         </button>
         {Data.map((dataItem) => (
-          // eslint-disable-next-line react/jsx-key
-          <div className=" flex justify-between p-4 flex-col  w-1/2 ">
+          <div
+            key={dataItem.id}
+            className=" flex justify-between p-4 flex-col  w-1/2 "
+          >
             <div className=" flex justify-between rounded-xl flex-row w-full bg-indigo-800 py-2 px-4 ">
               <h1 className=" text-xl text-white">{dataItem.question}</h1>
               <span
