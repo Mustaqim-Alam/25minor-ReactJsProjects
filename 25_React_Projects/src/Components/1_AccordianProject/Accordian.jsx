@@ -1,7 +1,7 @@
 import { useState } from "react";
-import Data from "./Data";
+import Data from './Data' ;
 
-function NewIndex() {
+function Accordian() {
   const [selected, setSelected] = useState(null);
   const [enableMultiselect, setenableMultiselect] = useState(false);
   const [multiselect, setMultiselect] = useState([]);
@@ -21,7 +21,8 @@ function NewIndex() {
   };
 
   return (
-    <div>
+    <div className= " w-full h-screen bg-red-300">
+    <h1 className=" text-3xl bg-pink-950 mt-1 py-4">Accordian</h1>
       <div className=" p-4 flex justify-center flex-col items-center  ">
         <button
           className=" p-2  hover:bg-gray-100  border-2 border-black rounded my-2 font-bold 
@@ -72,4 +73,5 @@ function NewIndex() {
   );
 }
 
-export default NewIndex;
+export default Accordian;
+

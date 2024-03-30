@@ -47,11 +47,12 @@ function Random() {
 
   return (
     <>
+    <h1 className=" text-3xl bg-pink-950 mt-1 py-4">Random Color Generator</h1>
       <div
         style={{ background: color }}
-        className="flex flex-col  item-center w-screen h-screen"
+        className="flex flex-col  item-center w-full h-screen"
       >
-        <div className="flex justify-between self-center h-16  bg-stone-50 w-full">
+        <div className="flex justify-around flex-row h-16 w-full">
           <button
             className=" bg-gray-400 p-3 rounded-xl mt-2 "
             onClick={() => setTypeofColor("hex")}
@@ -65,7 +66,7 @@ function Random() {
             Switch RGB Color
           </button>
           <button
-            className=" bg-gray-400 p-3 rounded-xl mt-2"
+            className=" bg-red-600 p-3 rounded-xl mt-2"
             onClick={
               typeofColor === "hex"
                 ? handleCreateHEXcolor
